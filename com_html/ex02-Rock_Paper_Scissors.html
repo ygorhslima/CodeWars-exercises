@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rps = (p1, p2) => {
+            const rules = {
+                rock: 'scissors',
+                scissors: 'paper',
+                paper: 'rock'
+            }
+
+            if (p1 === p2){
+                return 'Draw!'
+            }else if (rules[p1] == p2){
+                return 'Player 1 won!'
+            }else{
+                return 'Player 2 won!'
+            }
+        };  
+
+        console.log(rps('scissors','paper'))
+        console.log(rps('scissors','rock'))
+        console.log(rps('paper','paper'))
+        console.log(rps('scissors','scissors'))
+        console.log(rps('rock','rock'))
+
+    </script>
+</body>
+</html>
